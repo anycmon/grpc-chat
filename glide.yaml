@@ -1,0 +1,14 @@
+package: grpc-chat
+import:
+- package: github.com/golang/protobuf
+  subpackages:
+  - proto
+- package: github.com/satori/go.uuid
+  version: ^1.1.0
+- package: golang.org/x/net
+  subpackages:
+  - context
+- package: google.golang.org/grpc
+  version: ^1.0.5
+  subpackages:
+  - grpclog
