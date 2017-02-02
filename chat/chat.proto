@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+package chat;
+
+service Chat {
+
+  rpc Connect(User) returns (User) {}
+  rpc Disconnect(User) returns (Empty) {}
+  rpc Rooms(Empty) returns (stream Room) {}
+  rpc RoomUsers(Room) returns (stream User) {}
+  rpc JoinRoom(RoomCredentials) returns (Empty) {}
+  rpc LeaveRoom(RoomCredentials) returns (Empty) {}
+  rpc ExchangeMessages(stream News) returns (stream News) {}
+}
+
+message Empty {
+}
+
+message Room {
+    string id = 1;
+    string name = 2;
+}
+
+message User {
+  string name = 1;
+  string id = 2;
+}
+
+message News {
+  string senderId = 1;
+  string roomId = 2;
+  string msg = 3;
+}
+
+message Error {
+    bool code = 1;
+    string msg = 2;
+}
+
+message RoomCredentials {
+  Room room = 1;
+  User user = 2;
+}
