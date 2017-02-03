@@ -2,7 +2,7 @@ package server
 
 import "sync"
 import "sort"
-import "grpc-chat/chat"
+import "github.com/anycmon/grpc-chat/chat"
 
 type room struct {
 	name  string

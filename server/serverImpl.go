@@ -2,9 +2,9 @@ package server
 
 import (
 	"fmt"
+	"github.com/anycmon/grpc-chat/chat"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc/grpclog"
-	"grpc-chat/chat"
 	"io"
 )
 

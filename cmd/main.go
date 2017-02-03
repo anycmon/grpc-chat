@@ -3,8 +3,8 @@ package main
 import (
 	"flag"
 	"fmt"
-	pb "grpc-chat/chat"
-	"grpc-chat/server"
+	pb "github.com/anycmon/grpc-chat/chat"
+	"github.com/anycmon/grpc-chat/server"
 	"net"
 
 	"google.golang.org/grpc"

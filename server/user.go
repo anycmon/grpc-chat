@@ -1,9 +1,9 @@
 package server
 
 import (
+	"github.com/anycmon/grpc-chat/chat"
 	"github.com/satori/go.uuid"
 	"google.golang.org/grpc/grpclog"
-	"grpc-chat/chat"
 	"sync"
 )
 

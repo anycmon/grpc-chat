@@ -1,4 +1,4 @@
-package: grpc-chat
+package: github.com/anycmon/grpc-chat
 import:
 - package: github.com/golang/protobuf
   subpackages:
