@@ -3,10 +3,10 @@ package main
 import (
 	"bufio"
 	"flag"
+	"github.com/anycmon/grpc-chat/chat"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/grpclog"
-	"grpc-chat/chat"
 	"io"
 	"os"
 )
